@@ -9,7 +9,7 @@ public class Driver{
     System.out.println("So, does it qualify as isEmpty()?: " + SA1.isEmpty());
     //test add
     System.out.println("--L--O--O--P--");
-    for (int i = 0; i<10; i++) {
+    for (int i = 0; i<10; i++) { //switch this back to 10 whenever
     System.out.println("--" + letters[i] + "--");
     System.out.println("Let's add the letter " + letters[i] + " to SA1. Did this work? (expect true): " + SA1.add(letters[i]));
     System.out.println("How big is SA1 now? (expect " + i + "): " + SA1.size());
@@ -19,11 +19,14 @@ public class Driver{
     System.out.println("toStringDebug(): " + SA1.toStringDebug());
     System.out.println("--" + letters[i] + "--");
   }
-    System.out.println("Now let's clear,");
-    SA1.clear();
-    System.out.println("size? isEmpty? toString? toStringDebug?: " + SA1.size() + ", " + SA1.isEmpty() + ", " + SA1 + ", " + SA1.toStringDebug());
-
-    System.out.println("--D--O--N--E--");
+  System.out.println("Array is full but let's add \" k \": ");
+  SA1.add("k");
+  System.out.println("size? isEmpty? toString? toStringDebug?: " + + SA1.size() + ", " + SA1.isEmpty() + ", " + SA1 + ", " + SA1.toStringDebug());
+  System.out.println("--M--O--V--I--N--G----O--N");
+  System.out.println("Now let's clear,");
+  SA1.clear();
+  System.out.println("size? isEmpty? toString? toStringDebug?: " + SA1.size() + ", " + SA1.isEmpty() + ", " + SA1 + ", " + SA1.toStringDebug());
+  System.out.println("--D--O--N--E--");
 
     //System.out.println("Done for now");
 
