@@ -9,7 +9,7 @@ public class Driver{
     System.out.println("So, does it qualify as isEmpty()?: " + SA1.isEmpty());
     //test add
     System.out.println("--L--O--O--P--");
-    for (int i = 0; i<2; i++) { //switch this back to 10 whenever
+    for (int i = 0; i<10; i++) { //switch this back to 10 whenever
     System.out.println("--" + letters[i] + "--");
     System.out.println("Let's add the letter " + letters[i] + " to SA1. Did this work? (expect true): " + SA1.add(letters[i]));
     System.out.println("How big is SA1 now? (expect " + i + "): " + SA1.size());
@@ -26,7 +26,7 @@ public class Driver{
   System.out.println("Now let's clear,");
   SA1.clear();
   System.out.println("size? isEmpty? toString? toStringDebug?: " + SA1.size() + ", " + SA1.isEmpty() + ", " + SA1 + ", " + SA1.toStringDebug());
-  System.out.println("--D--O--N--E--");
+  System.out.println("--C--H--E--C--K----S--E--T--&--G--E--T");
   System.out.println("");
   System.out.println("Now let's check set and get");
   System.out.println("Setting index 3 to \" hey \", should print error since 3 is greater than size: "); 
@@ -39,6 +39,11 @@ public class Driver{
   SA1.add("d");
   System.out.println("Adding \"a\" and \"b\" and \"c\" and \"d\", so that index 3 is valid and also should return \"d\" since that's what was in set: " + SA1.set(3, "hey"));
   System.out.println("size (4)? toString ([a, b, c, hey])?: " + SA1.size() + ", " + SA1);
+  System.out.println("----");
+  System.out.println("GET, we are going to go through all 4 elements and print all, and then get 2 errors: one for -1 and one for index 4");
+  for (int i = -1; i < 5; i++) {
+    System.out.println(SA1.get(i));
+  }
   System.out.println("D--O--N--E");
 
     //System.out.println("Done for now");
