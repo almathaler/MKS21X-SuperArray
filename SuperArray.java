@@ -93,7 +93,7 @@ public class SuperArray {
   }
 
   private void resize() {
-    String[] temp = new String[data.length + 1];
+    String[] temp = new String[data.length + data.length + 1];
     for (int i = 0; i < data.length; i++) {
       temp[i] = data[i];
     }
