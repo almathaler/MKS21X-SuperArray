@@ -42,7 +42,7 @@ public class SuperArray {
       //  i+=1;
       //}
       //else {
-        rS += data[i] + ",";
+        rS += data[i] + ", ";
       //}
     }
     if (size != 0) {

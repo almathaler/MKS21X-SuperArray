@@ -27,6 +27,17 @@ public class Driver{
   SA1.clear();
   System.out.println("size? isEmpty? toString? toStringDebug?: " + SA1.size() + ", " + SA1.isEmpty() + ", " + SA1 + ", " + SA1.toStringDebug());
   System.out.println("--D--O--N--E--");
+  System.out.println("");
+  System.out.println("Now let's check set and get");
+  System.out.println("Setting index 3 to \" hey \", should print error since 3 is greater than size: "); 
+  System.out.println(SA1.set(3, "hey"));
+  SA1.add("a");
+  SA1.add("b");
+  SA1.add("c");
+  SA1.add("d");
+  System.out.println("Adding \"a\" and \"b\" and \"c\" and \"d\", so that index 3 is valid and also should return \"d\" since that's what was in set: " + SA1.set(3, "hey"));
+  System.out.println("size (4)? toString ([a, b, c, hey])?: " + SA1.size() + ", " + SA1);
+  System.out.println("D--O--N--E");
 
     //System.out.println("Done for now");
 
