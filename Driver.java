@@ -9,7 +9,7 @@ public class Driver{
     System.out.println("So, does it qualify as isEmpty()?: " + SA1.isEmpty());
     //test add
     System.out.println("--L--O--O--P--");
-    for (int i = 0; i<10; i++) { //switch this back to 10 whenever
+    for (int i = 0; i<2; i++) { //switch this back to 10 whenever
     System.out.println("--" + letters[i] + "--");
     System.out.println("Let's add the letter " + letters[i] + " to SA1. Did this work? (expect true): " + SA1.add(letters[i]));
     System.out.println("How big is SA1 now? (expect " + i + "): " + SA1.size());
@@ -31,6 +31,8 @@ public class Driver{
   System.out.println("Now let's check set and get");
   System.out.println("Setting index 3 to \" hey \", should print error since 3 is greater than size: "); 
   System.out.println(SA1.set(3, "hey"));
+  System.out.println("Setting index -1 to \" hey \", should print error since -1 doesn't exist: "); 
+  System.out.println(SA1.set(-1, "hey"));
   SA1.add("a");
   SA1.add("b");
   SA1.add("c");
