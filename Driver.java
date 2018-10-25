@@ -44,7 +44,10 @@ public class Driver{
   for (int i = -1; i < 5; i++) {
     System.out.println(SA1.get(i));
   }
+  System.out.println("--C--O--N--T--A--I--N--S--");
+  System.out.println("Contains a? Contains b? Contains C? Contains hey? Contains d? Contains A? Contains go?");
   System.out.println("D--O--N--E");
+  
 
     //System.out.println("Done for now");
 
