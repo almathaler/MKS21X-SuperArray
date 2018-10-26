@@ -127,5 +127,26 @@ public class SuperArray {
     return -1;
   }
 
+  public void add(int index, String element) {
+    if (index > size || index < 0) {
+      System.out.println("Error: index out of range");
+    }
+    else {
+      if (size == data.length) {
+        this.resize();
+      }
+      size++;
+      String[] temp = new String[data.length];
+      for (int i = 0; i < index; i++) {
+        temp[i] = data[i];
+      }
+      temp[index] = element;
+      for (int i = index+1; i<size; i++) {
+        temp[i] = data[i-1];
+      }
+      data = temp;
+    }
+  }
+
 
 }

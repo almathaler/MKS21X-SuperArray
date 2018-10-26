@@ -55,6 +55,19 @@ public class Driver{
   System.out.println("Where is the first index of a? (should return 0): " + SA1.indexOf("a"));
   System.out.println("Where is the last index of a? (Should return 5): " + SA1.lastIndexOf("a"));
   System.out.println("What happens when we search for first or last index of something not in SuperArray (two -1s)?: " + SA1.indexOf("ggg") + ", " + SA1.lastIndexOf("djfkS"));
+  System.out.println("--A--D--D----W----I--N--D--E--X");
+  System.out.println("Let's make a new SuperArray, SA2. It looks like this: [a,b,c,d,e,f,g,]");
+  SuperArray SA2 = new SuperArray();
+  SA2.add("a"); SA2.add("b"); SA2.add("c"); SA2.add("d"); SA2.add("e"); SA2.add("f"); SA2.add("g");
+  System.out.println("Here's how SA2 looks: " + SA2 + ", " + SA2.toStringDebug());
+  SA2.add(2, "HEY");
+  System.out.println("Now let's add \"HEY\" to index 2: " + SA2);
+  System.out.println("What happens when the index I want doesn't exist?: ");
+  SA2.add(50, "NO");
+  SA2.add(-1, "NO");
+  SA2.add("a"); SA2.add("b");
+  SA2.add(9, "NINE");
+  System.out.println("What happens to SA2 when I add so much it needs to resize?" + SA2 + ", " + SA2.toStringDebug());
   System.out.println("D--O--N--E");
 
 
