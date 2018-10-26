@@ -29,9 +29,9 @@ public class Driver{
   System.out.println("--C--H--E--C--K----S--E--T--&--G--E--T");
   System.out.println("");
   System.out.println("Now let's check set and get");
-  System.out.println("Setting index 3 to \" hey \", should print error since 3 is greater than size: "); 
+  System.out.println("Setting index 3 to \" hey \", should print error since 3 is greater than size: ");
   System.out.println(SA1.set(3, "hey"));
-  System.out.println("Setting index -1 to \" hey \", should print error since -1 doesn't exist: "); 
+  System.out.println("Setting index -1 to \" hey \", should print error since -1 doesn't exist: ");
   System.out.println(SA1.set(-1, "hey"));
   SA1.add("a");
   SA1.add("b");
@@ -45,9 +45,18 @@ public class Driver{
     System.out.println(SA1.get(i));
   }
   System.out.println("--C--O--N--T--A--I--N--S--");
-  System.out.println("Contains a? Contains b? Contains C? Contains hey? Contains d? Contains A? Contains go?");
+  System.out.println("Contains a? Contains b? Contains c? Contains hey? Contains d? Contains A?: ");
+  System.out.println(SA1.contains("a") + ", " + SA1.contains("b") + ", " + SA1.contains("c") + ", " + SA1.contains("hey") + ", " + SA1.contains("d") + ", " + SA1.contains("A"));
+  System.out.println("--I--N--D--E--X----O--F");
+  System.out.println("let's add two more As to SA1 to confuse this method");
+  SA1.add("a");
+  SA1.add("a");
+  System.out.println("This is how SA1 now looks: " + SA1);
+  System.out.println("Where is the first index of a? (should return 0): " + SA1.indexOf("a"));
+  System.out.println("Where is the last index of a? (Should return 5): " + SA1.lastIndexOf("a"));
+  System.out.println("What happens when we search for first or last index of something not in SuperArray (two -1s)?: " + SA1.indexOf("ggg") + ", " + SA1.lastIndexOf("djfkS"));
   System.out.println("D--O--N--E");
-  
+
 
     //System.out.println("Done for now");
 
