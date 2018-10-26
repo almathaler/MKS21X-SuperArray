@@ -68,7 +68,16 @@ public class Driver{
   SA2.add("a"); SA2.add("b");
   SA2.add(9, "NINE");
   System.out.println("What happens to SA2 when I add so much it needs to resize?" + SA2 + ", " + SA2.toStringDebug());
+  System.out.println("--R--E--M--O--V--E--");
+  SA2.remove(3);
+  System.out.println("If we remove index 3 from SA2, what does it look like? And what is its size?: " + SA2 + ", " + SA2.size());
+  SA2.remove(7);
+  System.out.println("If we remove index 7 from SA2, what does it look like? And what is its size?: " + SA2 + ", " + SA2.size());
+  System.out.println("What if we remove something greater than size, or a negative index?: ");
+  SA2.remove(23);
+  SA2.remove(-40);
   System.out.println("D--O--N--E");
+
 
 
     //System.out.println("Done for now");

@@ -148,5 +148,25 @@ public class SuperArray {
     }
   }
 
+  public String remove(int index) {
+    if (index > size || index < 0) {
+      System.out.println("Error: index out of range");
+      return null;
+    }
+    else {
+      size--;
+      String oldE = data[index];
+      String[] temp = new String[data.length];
+      for (int i = 0; i < index; i++) {
+        temp[i] = data[i];
+      }
+      for (int i = index; i < size; i++) {
+        temp[i] = data[i+1];
+      }
+      data = temp;
+      return oldE;
+    }
+  }
+
 
 }
