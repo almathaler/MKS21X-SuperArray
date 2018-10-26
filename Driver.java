@@ -76,6 +76,14 @@ public class Driver{
   System.out.println("What if we remove something greater than size, or a negative index?: ");
   SA2.remove(23);
   SA2.remove(-40);
+  System.out.println("--R--E--M--O--V--E----S--T--R--I--N--G");
+  SA2.remove("HEY");
+  System.out.println("If we remove \"HEY\" from SA2, what does it look like? And what is its size?: " + SA2 + ", " + SA2.size());
+  SA2.remove("b");
+  System.out.println("If we remove \"b\" from SA2, what does it look like? And what is its size?: " + SA2 + ", " + SA2.size());
+  System.out.println("What if we remove something not in the SuperArray?: ");
+  System.out.println(SA2.remove("BJGK"));
+  System.out.println(SA2.remove("BROSEPH"));
   System.out.println("D--O--N--E");
 
 

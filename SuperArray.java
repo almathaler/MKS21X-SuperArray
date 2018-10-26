@@ -168,5 +168,24 @@ public class SuperArray {
     }
   }
 
+  public boolean remove(String element) {
+    if (!this.contains(element)) {
+      return false;
+    }
+    else {
+      size--;
+      int index = this.indexOf(element);
+      String[] temp = new String[data.length];
+      for (int i = 0; i<index; i++) {
+        temp[i] = data[i];
+      }
+      for (int i = index; i<size; i++) {
+        temp[i] = data[i+1];
+      }
+      data = temp;
+    }
+    return true;
+  }
+
 
 }
