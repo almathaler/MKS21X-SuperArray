@@ -85,12 +85,20 @@ public class Driver{
     System.out.println("If we remove \"b\" from SA2, what does it look like? And what is its size?: " + SA2 + ", " + SA2.size());
     System.out.println("What if we remove something not in the SuperArray?: ");
     System.out.println(SA2.remove("BJGK"));
-    System.out.println(SA2.remove("BROSEPH"));
+    System.out.println(SA2.remove("PH"));
+    System.out.println("--T--E--S--T--I--N--G----C--O--N--S--T--R--U--C--T--O--R");
+    SuperArray SA3 = new SuperArray(4);
+    System.out.println("Printing out SA3 should show 4 nulls: " + SA3.toStringDebug());
+    //SuperArray SA4 = new SuperArray(-1);
     System.out.println("D--O--N--E");
   }
   catch(IndexOutOfBoundsException e)
   {
     System.out.println("IndexOutOfBoundsException in " + e);
+  }
+  catch(IllegalArgumentException e)
+  {
+    System.out.println("IllegalArguementException: " + e);
   }
 
 
